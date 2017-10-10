@@ -1,0 +1,57 @@
+
+#pgsearch{
+	border:1px solid #6c6d69;
+	padding:20px 30px;
+	margin: 10px;
+	box-shadow: 2px 2px 3px;
+
+}
+
+#pgsearch .title{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#pgsearch form input[type="text"],
+#pgsearch form input[type="password"]{
+	display:block;
+
+	padding:10px;
+	margin:15px 0px;
+	width:95%;
+	border:0px;
+	border-bottom: 1.2px solid #32baec;
+	border-left: 1.2px solid #32baec;
+	font-size: 0.8em;
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+
+#pgsearch form input[type="button"]{
+	display:block;
+
+	padding:10px;
+	margin:20px 0px;
+	width:100%;
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   font-size: 0.8em;
+   border-radius: 5px;
+   border:0px;
+   background-color: #fd9727;
+   color:white;
+   text-align: center;
+
+
+
+}
+
+
+#pgsearch form div{
+	font-size: 0.7em;
+	margin:10px;
+}

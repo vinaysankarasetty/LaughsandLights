@@ -1,28 +1,34 @@
-const path = require('path');
- 
-module.exports = {
-  context: path.join(__dirname, 'src'),
-  entry: [
-    './main.js',
-  ],
-  output: {
-    path: path.join(__dirname, 'www'),
-    filename: 'bundle.js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          'babel-loader',
-        ],
+var config = {
+   entry: './main.js', // entry point
+   output: {
+         filename: 'index.js', // place where bundled app will be served
       },
-    ],
-  },
-  resolve: {
-    modules: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
-};
+   devServer: {
+         inline: true, // autorefresh
+         port: 8080, // development port server
+         historyApiFallback: true
+      },
+   module: {
+         loaders: [
+            {
+               test: /\.jsx?$/, // search for js files 
+               exclude: /node_modules/,
+               loader: 'babel-loader',
+   query: {
+               presets: ['es2015', 'react'] // use es2015 and react
+            }
+         },
+         // handle stylesheets required from node packages
+    { test: /\.css$/, loader: 'style-loader!css-loader'},
+    {
+      test: /\.(eot|svg|ttf|woff|woff2)$/,
+      loader: 'file-loader',
+    },
+    {
+      test : /\.jpg$/,
+      exclude: /(node_modules)/,
+      loader : 'file-loader'
+    }  ]
+   }
+}
+module.exports = config;

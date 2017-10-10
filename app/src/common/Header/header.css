@@ -1,0 +1,47 @@
+header{
+	width:100%;
+	position:fixed;
+	top:0px;
+	z-index: 9999;
+	height:50px;
+	background-color: #25baee;
+}
+
+h1{
+	color:white;
+	font-size: 1.8em;
+	line-height: 50px;
+	padding:0px 10px 0px 30px;
+	vertical-align: middle;
+	float:left;
+	display: inline-block;
+	width:40%;
+
+}
+
+menu{
+float:right;
+color:white;
+margin-right: 40px;
+}
+
+menu ul li{
+	list-style-type: none;
+	display: inline-block;
+	
+	line-height: 50px;
+	vertical-align: baseline;
+}
+menu ul li a{
+color: white;
+padding:0px 20px;
+text-decoration: none;
+}
+
+menu ul li a:hover{
+color: white;
+text-decoration: none;
+padding-bottom: 13px;
+border-bottom: 3px solid #dc531a;
+
+}
