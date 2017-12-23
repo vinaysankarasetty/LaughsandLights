@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Register from '../../common/Register/User/register.js';
-import WelcomeTiles from '../../common/WelcomeTiles/welcometiles.js';
+import StudioRegister from '../../common/Register/Studio/register.js';
+
 import './registerpage.css';
-class RegisterPage extends React.Component {
+class PGRegisterPage extends React.Component {
    render() {
       return (
 
@@ -11,10 +11,10 @@ class RegisterPage extends React.Component {
          <div id="content">
          <div className="container">
          
-         <div className="item"><WelcomeTiles/></div>
+         
          <div className="item">
 
-         <Register/></div>
+         <StudioRegister/></div>
 </div>
          </div>
          
@@ -25,4 +25,4 @@ class RegisterPage extends React.Component {
 }
 
 
-export default RegisterPage;
+export default PGRegisterPage;

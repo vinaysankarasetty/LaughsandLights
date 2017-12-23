@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'React-dom';
+import ReactDOM from 'react-dom';
 import './welcometiles.css';
-import dsc20 from './img/DSC_0020.jpg';
-import dsc24 from './img/DSC_0024.jpg';
-import dsc62 from './img/DSC_0062.jpg';
+import dsc20 from './img/DSC_0020-min.jpg';
+import dsc24 from './img/DSC_0024-min.jpg';
+import dsc62 from './img/DSC_0062-min.jpg';
 
 
 
 class WelcomeTiles extends React.Component {
 
    componentDidMount(){
-      this.animate();
+      this.interval = this.animate();
    }
 
    
@@ -18,20 +18,21 @@ class WelcomeTiles extends React.Component {
       var that = this;
       
       var i=1;
-      setInterval(function(){
+      var interval = setInterval(function(){
         
 
-         that.refs["_img"+i].className='';
+         if(that.refs["_img"+i]){that.refs["_img"+i].className='';}
          
          if(i==6){
             i=0;
 
          }
          i++;
-         that.refs["_img"+ i].className='active';
+         if(that.refs["_img"+ i]){that.refs["_img"+ i].className='active';}
          
 
       }, 5000);
+      return interval;
    }
    
    render() {
@@ -50,6 +51,10 @@ class WelcomeTiles extends React.Component {
 
          </section>
       );
+   }
+   componentWillUnmount(){
+      //clearInterval(this.interval);
+
    }
 }
 export default WelcomeTiles;

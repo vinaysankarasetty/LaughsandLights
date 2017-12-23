@@ -26,6 +26,16 @@ class SignIn extends React.Component {
 
             </div>
 
+            <div>
+            <Link to="/register/photographer">Register as Individual Photographer</Link>
+
+            <br/><br/>
+
+            <Link to="/register">Register a Studio</Link>
+
+
+            </div>
+
             </form>
 
          </section>

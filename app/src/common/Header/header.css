@@ -5,17 +5,22 @@ header{
 	z-index: 9999;
 	height:50px;
 	background-color: #25baee;
+	box-shadow: 0px 2px 5px #444;
+	min-width: 800px;
 }
 
-h1{
+h1 a, h1 a:hover{
 	color:white;
-	font-size: 1.8em;
+	font-size: 1em;
 	line-height: 50px;
 	padding:0px 10px 0px 30px;
 	vertical-align: middle;
 	float:left;
 	display: inline-block;
 	width:40%;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
 
 }
 
@@ -23,6 +28,7 @@ menu{
 float:right;
 color:white;
 margin-right: 40px;
+font-size: 1em;
 }
 
 menu ul li{
@@ -31,6 +37,7 @@ menu ul li{
 	
 	line-height: 50px;
 	vertical-align: baseline;
+	padding:0px;
 }
 menu ul li a{
 color: white;
@@ -43,5 +50,39 @@ color: white;
 text-decoration: none;
 padding-bottom: 13px;
 border-bottom: 3px solid #dc531a;
+font-weight: bolder;
 
+
+}
+
+.register_link{
+	background-color: #777;
+	width: auto;
+	text-align: center;
+	display: none;
+}
+.register_link.active{
+	display: block;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+	top: 50px;
+	right:0px;
+	white-space: nowrap;
+}
+.register_link a:hover{
+	border-bottom: none;
+}
+.register_link div{
+border-bottom: 2px solid #999;
+}
+
+.register_link div:hover{
+	font-weight: bolder;
+border-bottom: 2px solid #dc531a;
 }

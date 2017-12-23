@@ -1,20 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Register from '../../common/Register/User/register.js';
+import UserLocationInput from '../../common/UserLocationInput/userlocationinput.js';
 import WelcomeTiles from '../../common/WelcomeTiles/welcometiles.js';
-import './registerpage.css';
-class RegisterPage extends React.Component {
+
+import './homepage.css';
+class ForgotPasswordPage extends React.Component {
    render() {
       return (
 
       	<div>
          <div id="content">
-         <div className="container">
+         <div className="container user_location_container">
+         <div>
+         <UserLocationInput/>
+
+         </div>
          
          <div className="item"><WelcomeTiles/></div>
-         <div className="item">
-
-         <Register/></div>
+        
 </div>
          </div>
          
@@ -25,4 +28,4 @@ class RegisterPage extends React.Component {
 }
 
 
-export default RegisterPage;
+export default ForgotPasswordPage;

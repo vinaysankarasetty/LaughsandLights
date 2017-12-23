@@ -1,0 +1,82 @@
+
+#photographer_register{
+	border:1px solid #6c6d69;
+	padding:20px 30px;
+	margin: 10px;
+	box-shadow: 2px 2px 3px;
+
+}
+
+#photographer_register .title{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#photographer_register form input[type="text"],
+#photographer_register form input[type="password"],
+#photographer_register form input[type="email"],
+#photographer_register form input[type="phone"],
+#photographer_register form input[type="number"]
+{
+	display:block;
+
+	padding:10px;
+	margin:15px 0px;
+	width:95%;
+	border:0px;
+	border-bottom: 1.2px solid #32baec;
+	border-left: 1.2px solid #32baec;
+	font-size: 0.8em;
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+
+#photographer_register form input[type="button"]{
+	display:block;
+
+	padding:10px;
+	margin:20px 0px;
+	width:100%;
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   font-size: 0.8em;
+   border-radius: 5px;
+   border:0px;
+   background-color: #fd9727;
+   color:white;
+   text-align: center;
+
+
+
+}
+#photographer_register form div.dk-select{
+	width:98%;
+	margin:10px 0px;
+}
+
+#photographer_register form div.dk-select .dk-selected,
+#photographer_register form div.dk-select .dk-selected:focus {
+	border-radius: 0px;
+
+	border: 1.2px solid #32baec;
+	padding:5px;
+
+}
+	
+
+#photographer_register form div.dk-select .dk-select-options .dk-option {
+	padding:5px;
+	
+}
+#photographer_register #geoLocationIcon{
+	color : grey;
+	cursor: pointer;
+}
+#photographer_register #geoLocationIcon.active{
+	color : #32baec
+}
+

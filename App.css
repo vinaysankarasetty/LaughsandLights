@@ -51,6 +51,9 @@ src: url('./fonts/Roboto/Roboto-ThinItalic.ttf');
 
 html,body{
 	font-family: Roboto-Thin, sans-serif;
+	min-width: 800px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 div#content{
 	padding:20px;
