@@ -38,6 +38,7 @@ menu ul li{
 	line-height: 50px;
 	vertical-align: baseline;
 	padding:0px;
+	font-weight: 600;
 }
 menu ul li a{
 color: white;
@@ -50,7 +51,7 @@ color: white;
 text-decoration: none;
 padding-bottom: 13px;
 border-bottom: 3px solid #dc531a;
-font-weight: bolder;
+font-weight: 900;
 
 
 }
@@ -58,7 +59,6 @@ font-weight: bolder;
 .register_link{
 	background-color: #777;
 	width: auto;
-	text-align: center;
 	display: none;
 }
 .register_link.active{

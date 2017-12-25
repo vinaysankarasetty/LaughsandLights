@@ -4,6 +4,7 @@ import Register from '../../common/Register/User/register.js';
 import WelcomeTiles from '../../common/WelcomeTiles/welcometiles.js';
 import './registerpage.css';
 class RegisterPage extends React.Component {
+   
    render() {
       return (
 

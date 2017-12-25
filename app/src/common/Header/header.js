@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './header.css';
-
+import UserIcon from 'react-icons/lib/md/account-circle'
+import PhotographerIcon from 'react-icons/lib/ti/user-outline'
+import StudioIcon from 'react-icons/lib/ti/group-outline'
 
 class Header extends React.Component {
 
@@ -35,16 +37,16 @@ this.setState({"registerLinkState" : "absolute register_link active"});
                      
                      <div className={this.state.registerLinkState} ref="register_link">
                         <div>
-                           <Link to="/register/photographer">Individual Photographer</Link>
+                           <Link to="/register/photographer"><PhotographerIcon width="25px" height="25px"/>Individual Photographer</Link>
                         </div>
                         <div>
-                           <Link to="/register/studio">Studio</Link>
+                           <Link to="/register/studio"><StudioIcon width="25px" height="25px"/>Studio</Link>
                         </div>
                      </div>
 
                   </li>
                   <li>
-                     <a href="#">Welcome Guest</a>
+                     <a href="#"> <UserIcon width="25px" height="25px"/>Welcome Guest</a>
                   </li>
                </ul>
             </menu>

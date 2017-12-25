@@ -12,7 +12,7 @@ var config = {
     devServer: {
         host: '0.0.0.0',
         inline: true, // autorefresh
-        port: 80, // development port server
+        port: 443, // development port server
         historyApiFallback: true,
         disableHostCheck: true
     },
@@ -22,7 +22,8 @@ var config = {
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react'] // use es2015 and react
+                    presets: ['es2015', 'react'], // use es2015 and react
+                    plugins: ['transform-decorators-legacy']
                 }
             },
             // handle stylesheets required from node packages
@@ -32,7 +33,7 @@ var config = {
                 loader: 'file-loader',
             },
             {
-                test: /\.jpg$/,
+                test: /\.(jpg|ico)$/,
                 exclude: /(node_modules)/,
                 loader: 'file-loader'
             },

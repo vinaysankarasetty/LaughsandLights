@@ -12,7 +12,7 @@ class ForgotPasswordPage extends React.Component {
          <div id="content">
          <div className="container user_location_container">
          <div>
-         <UserLocationInput/>
+         <UserLocationInput formatedAddress={this.props.formatedAddress}/>
 
          </div>
          

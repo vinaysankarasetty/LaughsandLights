@@ -7,8 +7,8 @@
 	display:inline-block;
 
 	padding:10px;
-	margin:15px 0px;
-	width:60%;
+	margin:15px 10px;
+	width:35%;
 	border:0px;
 	border-bottom: 1.2px solid #32baec;
 	border-left: 1.2px solid #32baec;
@@ -28,4 +28,7 @@
 
 #search_btn:hover{
 	background-color: #f46620;
+}
+.autoLocation{
+	color: #25baee;
 }

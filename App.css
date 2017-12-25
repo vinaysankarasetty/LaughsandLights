@@ -72,3 +72,10 @@ div#content{
 .item:first-child{
 	flex-grow: 5;
 }
+form input[type="submit"],form input[type="button"],form button{
+	background-color: #fd9727;
+}
+
+form input[type="submit"]:hover,form input[type="button"]:hover,form button:hover{
+	background-color: #f46620;
+}
